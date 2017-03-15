@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<header>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <title>St. Womi | Java Dev. & Tester</title>
+  <meta name="description" content="Personal Portfolio Website">
+  <meta name="keywords" content="womi, portfolio, personal website, java, developer, QA, tester">
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <style>
+    #map {
+      height: 100px;
+      width: 100%;
+    }
+    
+    .panel-heading span {
+      margin-top: -20px;
+      font-size: 15px;
+    }
+    
+    .clickable {
+      cursor: pointer;
+    }
+    
+    #sub {
+      text-align: center;
+    }
+    
+    .panel>.panel-heading {
+      background-color: #015249;
+      color: white;
+    }
+  </style>
+</header>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div id="contains">
+          <div id="title">
+            <br>
+            <br>
+            <br>
+            <h1 style="font-size: 1500%">
+              <p style="color: #F53240">St.<br>Womi</p>
+            </h1>
+            <div id="sub">
+              <h4>Java Developer | Tester</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div id="essentials">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <p align="center">Hello, I'm Sara.
+            <br> I write code that's clean, tested and scalable. </p>
+          <p> <br><br> A little about me:
+            <br> Currently based in Toronto . Code in Java . Passionate about QA . Manual, Performance & Automation Testing
+            . Learning French . Tiny house enthusiast</p>
+          </p>
+          <br>
+        </div>
+        <!--PANEL 1 - SKILLS -->
+        <div class="panel panel-default">
+          <div class="panel-heading clickable">
+            <h3 class="panel-title"><b>Skills</b></h3>
+            <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span></div>
+          <div class="panel-body">
+            <table class="table">
+              <tr>
+                <td>
+                  Experienced with:
+                </td>
+                <td>Java, Python | HTML/CSS, XML | SQL, SQLite | Agile (Scrum), BDD, TDD | Bootstrap, WordPress</td>
+              </tr>
+              <tr>
+                <td>
+                  Familiar with:
+                </td>
+                <td>JavaScript, MySQL, Linux, C#.NET, REST APIs</td>
+              </tr>
+              <tr>
+                <td>Tools:</td>
+                <td>Git, TestComplete, HPQC, HPALM</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <!--PANEL 2 - PROJECTS-->
+        <div class="panel panel-info">
+          <div class="panel-heading clickable">
+            <h3 class="panel-title"><b>Projects</b></h3>
+            <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span></div>
+          <div class="panel-body">
+            <p>*COMING SOON*
+              <br>https://github.com/stwomi
+            </p>
+          </div>
+        </div>
+        <!--PANEL 3 - EXTRA EXTRA -->
+        <div class="panel panel-info">
+          <div class="panel-heading clickable">
+            <h3 class="panel-title"><b>Blog</b></h3>
+            <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span></div>
+          <div class="panel-body">
+            **Coming soon**
+          </div>
+        </div>
+
+        <!--PANEL 4 - CONTACT ME -->
+        <div class="panel panel-info">
+          <div class="panel-heading clickable">
+            <h3 class="panel-title"><b>Contact Me</b></h3>
+            <span class="pull-right"><i class="glyphicon glyphicon-minus"></i></span></div>
+          <div class="panel-body">
+            <br>
+            <p><b>Physicially here:</b>
+              <div id="map"></div>
+              <br>
+              <b>Digitally here:</b>
+              <!--social media icons via vervex.ca-->
+              <a href="mailto:saratwomi@gmail.com" target="top">
+                <img border="0" alt="saratwomi@gmail.com?Subject=Hello%20\St.%20\Womi" src="email.png" width="30" height="30"></a>&nbsp;
+              <a href="https://github.com/stwomi" target="_blank">
+                <img border="0" alt="github.com/stwomi" src="Github.png" width="30" height="30"></a>&nbsp;
+              <a href="https://twitter.com/stwomi" target="_blank">
+                <img border="0" alt="twitter.com/stwomi" src="twitter.png" width="30" height="30"></a>&nbsp;
+              <a href="https://www.linkedin.com/in/sara-womiloju-38764690/" target="_blank">
+                <img border="0" alt="linkedIn" src="linkedin.png" width="30" height="30"></a>&nbsp;
+              <br>
+              <!--<br>Also here: *insert web form (name, email, message, send)-->
+              </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <!--FOOTER-->
+  <div class="panel-footer">
+    <div align="center">contact{at}stwomi.com | <a href="https://github.com/stwomi" target="_blank">github.com/stwomi</a>
+      <br> &#169; 2017 Sara Womiloju, All Rights Reserved
+    </div>
+  </div>
+  </div>
+  <!--JavaScript-->
+  <script type="text/javascript">
+    $(document).on('click', '.panel div.clickable', function (e) {
+      var $this = $(this); if (!$this.hasClass('panel-collapsed')) {
+        $this.parents('.panel').find('.panel-body').slideUp();
+        $this.addClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-minus').addClass('glyphicon-plus');
+      }
+      else {
+        $this.parents('.panel').find('.panel-body').slideDown();
+        $this.removeClass('panel-collapsed');
+        $this.find('i').removeClass('glyphicon-plus').addClass('glyphicon-minus');
+      }
+    });
+    $(document).ready(function () {
+      $('.panel-heading span.clickable').click();
+      $('.panel div.clickable').click();
+    });
+    function initMap() {
+      var uluru =
+        {
+          lat:
+          43.6483997,
+          lng:
+          -79.398119
+        };
+      var map = new google.maps.Map(document.getElementById('map'),
+        {
+          zoom: 13,
+          center: uluru
+        });
+      var marker = new google.maps.Marker({
+        position: uluru,
+        map: map
+      });
+    }
+
+  </script>
+  <script async="" defer="defer" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCUB_szSOeslTMViBFqsgswcpBWh9coO6s&amp;callback=initMap"></script>
+</body>
+</html>
