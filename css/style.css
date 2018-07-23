@@ -1,0 +1,28 @@
+.panel-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#map {
+    height: 100px;
+    width: 100%;
+  }
+  
+  .panel-heading span {
+    margin-top: -20px;
+    font-size: 15px;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  #sub {
+    text-align: center;
+  }
+  
+  .panel>.panel-heading {
+    background-color: #015249;
+    color: white;
+  }
