@@ -11,6 +11,15 @@ h1{
   color: #F53240;
 }
 
+.form-group{
+  padding: 6px 12px;
+}
+
+.btn{
+  padding: 6px 12px;
+  width: 100%;
+
+}
 textarea{
 width: 100%;
 }
