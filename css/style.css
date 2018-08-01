@@ -1,7 +1,25 @@
 .panel-footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    background-color: #015249;
+    color: white;
+}
+
+h1{
+  font-size: 1500%;
+  color: #F53240;
+}
+
+textarea{
+width: 100%;
+}
+
+#subject{
+  width: 100%;
+}
+.left-portion{
+padding: 50em;
 }
 
 #map {
