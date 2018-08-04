@@ -11,29 +11,38 @@
   <meta name="keywords" content="womi, womiloju, portfolio, personal website, javascript, developer, QA, quality assurance, quality-assurance, tester">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="shortcut icon" href="./images/stw.ico" />
 </head>
 
 <body>
-  <div class="container">
+  <div class="flex-container">
     <div class="row">
-      <!--LEFT-->
+      <!--LEFT GRID-->
       <div class="col-sm-6">
-        <div class="left-portion">
-          <!-- <img src="./images/st.png" height="50em" /> -->
-        </div>
+        <img class="logo" src="./images/st.png" />
       </div>
+      <!--END OF LEFT GRID-->
+      <!--RIGHT GRID-->
       <div class="col-sm-6">
         <div id="essentials">
-          <p align="center">Hello, I'm Sara t Womi.
-            <br> I write code that's clean, tested and scalable. </p>
-          <p>
-            <br>
-            <br> A little about me:
-            <br> Currently based in Toronto . Code in Java . Passionate about QA . Manual, Performance & Automation Testing .
-            Learning French . Tiny house enthusiast</p>
+            <div class="typewriter">
+                <p>Hello, I'm St. Womi</p>
+              </div>
+                              <br>
+            <br> Full-Stack Developer + Quality Assurance.
+            <br>I have a passion for creating, producing and testing quality software, I have a unique perspective on building
+            applications that re-imagine the end-users experience. I write code that's clean, tested and scalable; with a
+            focus on accessiblity.
+          </p>
+          <br> A little about me:
+          <br> Currently based in [flag]. Code in JavaScript.
+          <br> Current focus Accessibility + React
+          <br> Hobby: "Healthy obsession" planespotting
+          </p>
           </p>
           <br>
         </div>
+        <!--END OF ESSENTIALS-->
         <!--PANEL 1 - SKILLS -->
         <div class="panel panel-default">
           <div class="panel-heading clickable">
@@ -50,7 +59,7 @@
               <tbody>
                 <tr>
                   <th scope="row"> Front-end</th>
-                  <td>React, JavaScript, Node.js, JQuery, AJAX, HTML, CSS, Flex, Material-UI, Sass, Bootstrap</td>
+                  <td>React, JavaScript, Node.js, JQuery, AJAX, HTML, CSS, Sass, Material-UI, Bootstrap</td>
                 </tr>
                 <tr>
                   <th scope="row"> Back-end</th>
@@ -71,6 +80,7 @@
             based on my usage
           </div>
         </div>
+        <!--END OF PANEL 1-->
         <!--PANEL 2 - PROJECTS-->
         <div class="panel panel-info">
           <div class="panel-heading clickable">
@@ -86,6 +96,7 @@
             </p>
           </div>
         </div>
+        <!--END OF PANEL 2-->
         <!--PANEL 3 - BLOG -->
         <div class="panel panel-info">
           <div class="panel-heading clickable">
@@ -100,6 +111,7 @@
             *COMING SOON*
           </div>
         </div>
+        <!--END OF PANEL 3-->
         <!--PANEL 4 - CONTACT ME -->
         <div class="panel panel-info">
           <div class="panel-heading clickable">
@@ -112,55 +124,59 @@
           </div>
           <div class="panel-body">
             <div class="connection-content">
-            <p>
-              <b>Physicially here:</b>
-              <div id="map"></div>
-              <br>
-              <b>Digitally here:</b>
-              <!--social media icons via vervex.ca-->
-              <a href="mailto:saratwomi@gmail.com" target="top">
-                <img border="0" alt="saratwomi@gmail.com?Subject=Hello%20\St.%20\Womi" src="./images/email.png" width="30" height="30">
-              </a>&nbsp;
-              <a href="https://github.com/stwomi" target="_blank">
-                <img border="0" alt="github.com/stwomi" src="./images/github.png" width="30" height="30">
-              </a>&nbsp;
-              <a href="https://twitter.com/stwomi" target="_blank">
-                <img border="0" alt="twitter.com/stwomi" src="./images/twitter.png" width="30" height="30">
-              </a>&nbsp;
-              <a href="https://www.linkedin.com/in/sara-womiloju-38764690/" target="_blank">
-                <img border="0" alt="linkedIn" src="./images/linkedin.png" width="30" height="30">
-              </a>&nbsp;
-              <br>
-            </p>
-          </div>
+              <p>
+                <b>Physicially here:</b>
+                <div id="map"></div>
+                <br>
+                <b>Digitally here:</b>
+                <!--social media icons via vervex.ca-->
+                <a href="mailto:saratwomi@gmail.com" target="top">
+                  <img border="0" alt="saratwomi@gmail.com?Subject=Hello%20\St.%20\Womi" src="./images/email.png" width="30" height="30">
+                </a>&nbsp;
+                <a href="https://github.com/stwomi" target="_blank">
+                  <img border="0" alt="github.com/stwomi" src="./images/github.png" width="30" height="30">
+                </a>&nbsp;
+                <a href="https://twitter.com/stwomi" target="_blank">
+                  <img border="0" alt="twitter.com/stwomi" src="./images/twitter.png" width="30" height="30">
+                </a>&nbsp;
+                <a href="https://www.linkedin.com/in/sara-womiloju-38764690/" target="_blank">
+                  <img border="0" alt="linkedIn" src="./images/linkedin.png" width="30" height="30">
+                </a>&nbsp;
+                <br>
+              </p>
+            </div>
             <hr/>
             <b>Message here:</b>
             <form>
-                <div class="form-row">
-                  <div class="form-group col-sm-6">
-                    <label for="name" hidden>Name: </label>
-                    <input class="form-control form-control-sm" type="text" placeholder="Name" id="name">
-                  </div>
-                  <div class="form-group col-sm-6">
-                    <label for="email" hidden>Email </label>
-                    <input class="form-control form-control-sm" type="email" placeholder="Email" id="email" required>
-                  </div>
+              <div class="form-row">
+                <div class="form-group col-sm-6">
+                  <label for="name" hidden>Name: </label>
+                  <input class="form-control form-control-sm" type="text" placeholder="Name" id="name">
                 </div>
-                <div class="form-group">
-                  <label for="subject" hidden>Subject</label>
-                  <input class="form-control form-control-sm" type="text" placeholder="Subject" id="subject" />
+                <div class="form-group col-sm-6">
+                  <label for="email" hidden>Email </label>
+                  <input class="form-control form-control-sm" type="email" placeholder="Email" id="email" required>
                 </div>
-                <div class="form-group">
-                  <label for="message" hidden>Message</label>
-                  <textarea class="form-control" placeholder="I just wanted to say..." required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary mb-2">Submit </button>
-              </form>
+              </div>
+              <div class="form-group">
+                <label for="subject" hidden>Subject</label>
+                <input class="form-control form-control-sm" type="text" placeholder="Subject" id="subject" />
+              </div>
+              <div class="form-group">
+                <label for="message" hidden>Message</label>
+                <textarea class="form-control" placeholder="I just wanted to say..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary mb-2">Submit </button>
+            </form>
           </div>
         </div>
+        <!--END OF PANEL 4-->
       </div>
+      <!--END OF RIGHT GRID-->
     </div>
+    <!--END OF ROW-->
   </div>
+  <!--END OF CONTAINER-->
   <!--FOOTER-->
   <div class="panel-footer">
     <div align="center">saratwomi{at}gmail.com |
@@ -168,22 +184,8 @@
       <br> &#169; 2018 Sara Womiloju
     </div>
   </div>
+  <!--END OF FOOTER -->
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   <!--JavaScript-->
   <script type="text/javascript">
     $(document).on('click', '.panel div.clickable', function (e) {
