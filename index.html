@@ -4,14 +4,27 @@
 <head>
   <meta charset="utf-8" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
   <title>St. Womi | Full-Stack Dev. & QA</title>
+  
   <meta name="description" content="Personal Portfolio Website">
   <meta name="keywords" content="womi, womiloju, portfolio, personal website, javascript, developer, QA, quality assurance, quality-assurance, tester">
   <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="shortcut icon" href="./images/stw.ico" />
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</script>
+<script>
+  $(function() {
+var text = $(".txt");
+$(".nameExpander")
+.mouseover(function() {       text.removeClass("hiddn"); })
+.mouseleave(function() {      text.addClass("hiddn"); })
+  });
+</script>
 </head>
 
 <body>
@@ -25,14 +38,39 @@
       <!--RIGHT GRID-->
       <div class="col-sm-6">
         <div id="essentials">
-            <div class="typewriter">
-                <p>Hello, I'm St. Womi</p>
-              </div>
-                              <br>
-            <br> Full-Stack Developer + Quality Assurance.
-            <br>I have a passion for creating, producing and testing quality software, I have a unique perspective on building
-            applications that re-imagine the end-users experience. I write code that's clean, tested and scalable; with a
-            focus on accessiblity.
+<!-- <div class="nameExpander"> -->
+  <p>Welcome, I am </p>
+    <span class="nameExpander">
+        <ul class="txt hiddn">
+            <!-- <li>H</li>
+            <li>i</li>
+            <li>,</li>
+            <li>&nbsp</li>
+            <li class="spaced">I</li>
+            <li>'</li>
+            <li>m</li>
+            <li>&nbsp</li> -->
+          <li class="spaced">S</li>
+          <li class="ghost">a</li>
+          <li class="ghost">r</li>
+          <li class="ghost">a</li>
+          <li class="spaced">t</li>
+            <li>.</li>
+          <li class="spaced">W</li>
+          <li>o</li>
+          <li>m</li>
+          <li>i</li>
+          <li class="ghost">l</li>
+          <li class="ghost">o</li>
+          <li class="ghost">j</li>
+          <li class="ghost">u</li>
+        </ul>
+
+      </span>
+
+                <!-- </div> -->
+                  <br>
+            <br>I design, code and test software. I have a unique perspective on building scalable applications that re-imagine the end-users experience with a focus on accessiblity.
           </p>
           <br> A little about me:
           <br> Currently based in [flag]. Code in JavaScript.
@@ -147,24 +185,24 @@
             </div>
             <hr/>
             <b>Message here:</b>
-            <form>
+            <form method="POST" action="contact.php">
               <div class="form-row">
                 <div class="form-group col-sm-6">
                   <label for="name" hidden>Name: </label>
-                  <input class="form-control form-control-sm" type="text" placeholder="Name" id="name">
+                  <input class="form-control form-control-sm" type="text" placeholder="Name" id="name" name="name">
                 </div>
                 <div class="form-group col-sm-6">
                   <label for="email" hidden>Email </label>
-                  <input class="form-control form-control-sm" type="email" placeholder="Email" id="email" required>
+                  <input class="form-control form-control-sm" type="email" placeholder="Email" id="email" name="email" required>
                 </div>
               </div>
               <div class="form-group">
                 <label for="subject" hidden>Subject</label>
-                <input class="form-control form-control-sm" type="text" placeholder="Subject" id="subject" />
+                <input class="form-control form-control-sm" type="text" placeholder="Subject" id="subject" name="subject"/>
               </div>
               <div class="form-group">
                 <label for="message" hidden>Message</label>
-                <textarea class="form-control" placeholder="I just wanted to say..." required></textarea>
+                <textarea class="form-control" placeholder="I just wanted to say..." name="message" required></textarea>
               </div>
               <button type="submit" class="btn btn-primary mb-2">Submit </button>
             </form>
@@ -186,6 +224,7 @@
   </div>
   <!--END OF FOOTER -->
   </div>
+
   <!--JavaScript-->
   <script type="text/javascript">
     $(document).on('click', '.panel div.clickable', function (e) {
