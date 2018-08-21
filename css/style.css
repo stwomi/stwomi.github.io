@@ -113,4 +113,16 @@ body {
   float: left;
 }
 
+a {
+  color: white;
+}
+
+a:hover {
+  color: #F53240;
+}
+
+a:visited {
+  color: #CAC8C8;
+}
+
 /*# sourceMappingURL=style.css.map */
