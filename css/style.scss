@@ -21,7 +21,7 @@ h1 {
   max-width: 100%;
   height: auto;
   padding-right: 8%;
-  /* box-sizing: border-box; */
+  border-bottom: 1px solid;
 }
 
 .form-group {
@@ -71,50 +71,44 @@ textarea, #subject {
   }
 }
 
-// * {
-// margin: 0;
-// padding: 0;
-// }
 body {
-// height: 200vh;
-font-family: 'Muli', sans-serif;
-}
-.txt {
-/* position: fixed; */
-top: 50%;
-left: 50%;
-/* transform: translateX(-50%) translateY(-50%); */
-list-style: none;
-border-bottom: 1px solid;
+  font-family: "Muli", sans-serif;
 }
 
-// .txt.hiddn {
-// border-bottom: 1px solid;
-// }
+.txt {
+  list-style: none;
+  // border-bottom: 1px solid;
+  color: #F53240;
+
+}
 
 .txt li {
-display: inline-block;
-float: left;
-font-weight: 700;
-/*   font-size: 2em; */
-opacity: 1;
-transition: all 0.5s ease-in-out;
-max-width: 2em;
+  display: inline-block;
+  float: left;
+  font-weight: 700;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  max-width: 2em;
 }
+
 .txt.hiddn li.spaced {
-padding-left: 0;
+  padding-left: 0;
 }
+
 .txt li.spaced {
-padding-left: 0.5em;
+  padding-left: 0.5em;
 }
 
 .txt.hiddn li.ghost {
-opacity: 0;
-max-width: 0;
+  opacity: 0;
+  max-width: 0;
 }
 
 .nameExpander {
   float: left;
+text-align: center;
+padding-left: 35%;
+width: 100%;
 }
 
 .essentials {
