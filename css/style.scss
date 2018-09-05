@@ -14,7 +14,7 @@
 
 h1 {
   font-size: 1500%;
-  color: #F53240;
+  color: #f53240;
 }
 
 .logo {
@@ -31,13 +31,14 @@ h1 {
 .btn {
   padding: 6px 12px;
   width: 100%;
-  background-color: #F53240;
+  background-color: #f53240;
   &:hover {
-    background-color: #AA000C;
+    background-color: #aa000c;
   }
 }
 
-textarea, #subject {
+textarea,
+#subject {
   width: 100%;
 }
 
@@ -67,7 +68,7 @@ textarea, #subject {
   background-color: #015249;
   color: white;
   &:hover {
-    background-color: #227C72;
+    background-color: #227c72;
   }
 }
 
@@ -78,8 +79,7 @@ body {
 .txt {
   list-style: none;
   // border-bottom: 1px solid;
-  color: #F53240;
-
+  color: #f53240;
 }
 
 .txt li {
@@ -106,9 +106,9 @@ body {
 
 .nameExpander {
   float: left;
-text-align: center;
-padding-left: 35%;
-width: 100%;
+  text-align: center;
+  padding-left: 35%;
+  width: 100%;
 }
 
 .essentials {
@@ -119,9 +119,9 @@ a {
   color: white;
 }
 a:hover {
-  color: #F53240;
+  color: #f53240;
 }
 
-a:visited{
-  color: #CAC8C8;
+a:visited {
+  color: #cac8c8;
 }
